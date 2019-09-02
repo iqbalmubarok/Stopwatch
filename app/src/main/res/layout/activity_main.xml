@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonMulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mulai"
+        android:textColor="#ffff"
+        android:background="#006400"
+        android:layout_below="@id/tv_waktu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"/>
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="berhenti"
+        android:textColor="#ffff"
+        android:background="#a52a2a"
+        android:layout_alignBaseline="@id/buttonMulai"
+        android:layout_alignBottom="@id/buttonMulai"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_alignTop="@id/buttonStop"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonLap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="simpan putaran"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/buttonStop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonLap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
